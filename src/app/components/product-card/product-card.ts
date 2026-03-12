@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+// import { IProduct } from '../products-list/products-list';
 
 @Component({
   selector: 'app-product-card',

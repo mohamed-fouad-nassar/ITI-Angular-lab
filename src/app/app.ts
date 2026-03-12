@@ -1,12 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { Navbar } from './components/navbar/navbar';
-import { Slider } from './components/slider/slider';
 import { Footer } from './components/footer/footer';
-import { ProductsList } from './components/products-list/products-list';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Slider, Footer, ProductsList],
+  imports: [RouterOutlet, Navbar, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

@@ -1,0 +1,62 @@
+<style>
+  .contact {
+    padding: 60px 0;
+    max-height: calc(100vh - 56px) !important;
+  }
+</style>
+
+<div class="contact">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="mb-4">Contact Us</h2>
+
+        <form action="contact.php" method="POST">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Subject</label>
+            <input type="text" name="subject" class="form-control" />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea name="message" rows="5" class="form-control" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+
+      <div class="col-md-4">
+        <h4 class="mb-4">Contact Info</h4>
+        <p>
+          <strong>Address:</strong><br />
+          123 Coffee Street<br />
+          Cairo, Egypt
+        </p>
+        <p>
+          <strong>Phone:</strong><br />
+          +20 100 123 4567
+        </p>
+        <p>
+          <strong>Email:</strong><br />
+          info@coffeeshop.com
+        </p>
+        <p>
+          <strong>Working Hours:</strong><br />
+          Mon - Fri: 8AM - 10PM<br />
+          Sat - Sun: 9AM - 11PM
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
