@@ -1,10 +1,12 @@
+import { IProduct } from '../../models/product';
 import { Component, Input } from '@angular/core';
-// import { IProduct } from '../products-list/products-list';
+import { ReusableProductCard } from '../reusable-product-card/reusable-product-card';
 
 @Component({
   selector: 'app-product-card',
   templateUrl: './product-card.html',
+  imports: [ReusableProductCard],
 })
 export class ProductCard {
-  @Input() product: any;
+  @Input() product!: IProduct;
 }
